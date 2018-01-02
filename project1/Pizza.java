@@ -25,5 +25,9 @@ public class Pizza {
        double time=20*this.number;
        return time;
    }
-     
+   
+    public double Calories(){
+       double calories=240*this.number;
+       return calories;
+    }
 }

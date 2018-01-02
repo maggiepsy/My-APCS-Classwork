@@ -25,4 +25,9 @@ public class porridge {
        double time=30*this.number;
        return time;
    }  
+    
+    public double Calories(){
+       double calories=220*this.number+50;
+       return calories;
+    }
 }

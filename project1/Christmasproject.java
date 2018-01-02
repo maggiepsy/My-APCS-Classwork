@@ -36,7 +36,8 @@ public class Christmasproject {
           int number=input.nextInt();
            Pizza C= new Pizza(number);
            System.out.println("The price is "+C.price()+" dollars.");
-           System.out.println("The waiting time is "+C.makingtime()+" minutes."); 
+           System.out.println("The waiting time is "+C.makingtime()+" minutes.");
+           System.out.println("The total calories is "+C.Calories()+" calories.");
        }
        
        if (x==2){
@@ -55,6 +56,7 @@ public class Christmasproject {
            porridge C= new porridge(number);
            System.out.println("The price is "+C.price()+" dollars.");
            System.out.println("The waiting time is "+C.makingtime()+" minutes."); 
+           System.out.println("The total calories is "+C.Calories()+" calories.");
        }
        
     }
