@@ -1,7 +1,7 @@
 /*
  * Maggie Pu S3C7
 Instructor: Mr.Daniel
-Descriptions: This is a program designed to help the colleges to find out their best candidate in the application pool. 
+Descriptions: This is a program designed to help students to find their most suitable school. 
  */
 package mywinterbreakprogram;
 import java.util.Scanner;
