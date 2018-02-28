@@ -40,7 +40,7 @@ public class Student {
         if (act<=0){
             score+=0;
         }
-        else if (act>150){
+        else if (act<175){
             score+=3;
         }
         else{
@@ -53,7 +53,7 @@ public class Student {
     public int getscoreUVA(){
         int score=0;
         
-        if (paper<5){
+        if (paper<2){
            score+=0; 
         }
         else{
@@ -62,7 +62,7 @@ public class Student {
         if (act<=0){
             score+=0;
         }
-        else if (act>150){
+        else if (act<100){
             score+=3;
         }
         else{
@@ -84,7 +84,7 @@ public class Student {
         if (act<=0){
             score+=0;
         }
-        else if (act>100){
+        else if (act<65){
             score+=3;
         }
         else{
@@ -108,7 +108,7 @@ public class Student {
         if (act<=0){
             score+=0;
         }
-        else if (act>200){
+        else if (act<200){
             score+=3;
         }
         else{
