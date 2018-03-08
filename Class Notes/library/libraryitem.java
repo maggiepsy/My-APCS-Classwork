@@ -5,7 +5,10 @@
  */
 package librarycode;
 
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  *
@@ -16,11 +19,11 @@ public class libraryitem {
     public String author;
     public int itemid;
     public boolean onloan;
-    public int duedate;
+    public Date duedate;
     public int currenttime;
     
     
-public libraryitem(String Atitle, String AAuthor, int Aitemid, boolean Aonloan, int Aduedate){
+public libraryitem(String Atitle, String AAuthor, int Aitemid, boolean Aonloan, Date Aduedate){
     title=Atitle;
     author=AAuthor;
     itemid=Aitemid;
@@ -28,6 +31,14 @@ public libraryitem(String Atitle, String AAuthor, int Aitemid, boolean Aonloan, 
     duedate=Aduedate;
 }
 
+private static Date addDays(Date date,int days){
+   GregorianCalendar cal= new GregorianCalendar();
+   cal.setTime(date);
+   cal.add(Calendar.DATE,days);
+   
+   return cal.getTime();
+   
+}
 public String gettitle(){
     return title;
 }
@@ -43,18 +54,18 @@ public boolean getonloan(){
     return onloan;
 }
 
-public int duedate(){
+public Date duedate(){
     return duedate;
 }
 
 public void borrowing(){
     onloan=true;    
-    duedate=10;
+    Date today=new Date();
+    duedate=addDays(today,14);
 }
 
 public void returning(){
     onloan=false;
-    duedate=0;
 }
 
 public void printdetails(){
@@ -64,5 +75,6 @@ public void printdetails(){
     System.out.println("Onloan: "+onloan);
     System.out.println("Duedate: "+duedate); 
 }
+
 
 }

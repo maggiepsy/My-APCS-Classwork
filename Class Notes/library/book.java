@@ -5,6 +5,8 @@
  */
 package librarycode;
 
+import java.util.Date;
+
 /**
  *
  * @author MaggiePu
@@ -13,13 +15,13 @@ public class book extends libraryitem{
    public boolean requested;
    
    
-   public book(String Atitle, String AAuthor, int Aitemid, boolean Aonloan, int Aduedate,boolean Isrequested){ 
+   public book(String Atitle, String AAuthor, int Aitemid, boolean Aonloan, Date Aduedate,boolean Isrequested){ 
         super(Atitle, AAuthor,Aitemid,Aonloan,Aduedate);
         requested=Isrequested;
    }
     
-   public void requested(boolean Isrequested) {
-         requested=Isrequested;
+   public void requested(boolean X) {
+         requested=X;
     }   
    
    

@@ -5,6 +5,8 @@
  */
 package librarycode;
 
+import java.util.Date;
+
 /**
  *
  * @author MaggiePu
@@ -13,7 +15,7 @@ public class cd extends libraryitem{
     public String type;
    
    
-   public cd(String Atitle, String AAuthor, int Aitemid, boolean Aonloan, int Aduedate,String Atype){ 
+   public cd(String Atitle, String AAuthor, int Aitemid, boolean Aonloan, Date Aduedate,String Atype){ 
         super(Atitle, AAuthor,Aitemid,Aonloan,Aduedate);
         type=Atype;
    }
@@ -24,8 +26,8 @@ public class cd extends libraryitem{
    
    
 public void printdetails(){
-    System.out.println("Title: "+title);
-    System.out.println("Author: "+author);
+    System.out.println("CD title: "+title);
+    System.out.println("Artist: "+author);
     System.out.println("ID: "+itemid);
     System.out.println("Onloan: "+onloan);
     System.out.println("Duedate: "+duedate); 
