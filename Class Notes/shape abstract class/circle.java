@@ -1,31 +1,29 @@
 /*
- * Maggie Pu S3C7
-Instructor: Mr.Daniel
-Description: A class for the shape to run different functions.
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
-package shape;
+package shape2;
 
 /**
  *
  * @author MaggiePu
  */
-public class circle {
-   int radius;
-   
-   public circle(int r){
-       this.radius=r;
-   }
-   
-   public double getarea(){   
-    double area=this.radius*this.radius*Math.PI;
-    return area;
+public class circle extends shape{
+    public circle(String ashapename,double asidelength){
+        super(ashapename,asidelength);
+        
     }
-   
-   public double circum(){
-       double circumm=2*this.radius*Math.PI;
-       return circumm;
-   }
-   
-   
-   
+    public double area(){
+       return Math.PI*getsidelength()*getsidelength();
+    }
+    
+    public double perimeter(){
+      return perimeter=2*Math.PI*getsidelength();
+    }
+    
+    public boolean equals(circle f){
+        return (this.getsidelength()==f.getsidelength());
+    }
+    
 }
