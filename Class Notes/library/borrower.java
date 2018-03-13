@@ -26,20 +26,20 @@ public class borrower extends libraryitem{
         itemsonloan=Aitemsonloan;
     }
      
-    public String Getborrowername(String Aborrowername) {
-         return Aborrowername;
+    public String Getborrowername() {
+         return borrowername;
     } 
      
-    public String Getemailaddress(String Aemailaddress) {
-         return Aemailaddress;
+    public String Getemailaddress() {
+         return emailaddress;
     }   
      
-    public int Getborrowerid(int Aborrowerid) {
-         return Aborrowerid;
+    public int Getborrowerid() {
+         return borrowerid;
     }   
      
-    public int Getitemsonloan(int Aitemsonloan){
-         return Aitemsonloan;
+    public int Getitemsonloan(){
+         return itemsonloan;
     }
      
     public void Updateitemsonloan(){
@@ -47,14 +47,14 @@ public class borrower extends libraryitem{
     }
     
     public void printdetails(){
-    System.out.println("CD title: "+title);
-    System.out.println("Artist: "+author);
-    System.out.println("ID: "+itemid);
-    System.out.println("Onloan: "+onloan);
-    System.out.println("Duedate: "+duedate); 
-    System.out.println("Borrower: "+borrowername); 
-    System.out.println("Emailaddress: "+emailaddress); 
-    System.out.println("Borrower id: "+borrowerid); 
+    System.out.println("CD title: "+gettitle());
+    System.out.println("Author: "+getauthor());
+    System.out.println("ID: "+getitemid());
+    System.out.println("Onloan: "+getonloan());
+    System.out.println("Duedate: "+getduedate()); 
+    System.out.println("Borrower: "+Getborrowername()); 
+    System.out.println("Emailaddress: "+Getemailaddress()); 
+    System.out.println("Borrower id: "+Getborrowerid()); 
     
 }
 
