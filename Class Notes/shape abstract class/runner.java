@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *Author: Maggie Pu
+Instructor:Mr. Daniel
+Date:2018.3.13
+Description: This is a program designed to test the understanding of abstract classes.
  */
 package shape2;
 
