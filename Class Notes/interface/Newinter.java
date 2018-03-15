@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Author: Maggie Pu
+Date: 2018.3.14
+Instructor:Mr.Daniel
+Description: This is a program designed to override the compare method to compare the area of two newly build circle. 
  */
 package newinter;
 
